@@ -5,5 +5,7 @@ stages:
 
 test:
   stage: test
+  services:
+    - selenium/standalone-chrome:latest
   script:
     - mvn clean package
