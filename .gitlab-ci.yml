@@ -1,0 +1,14 @@
+image: maven:latest
+
+stages:
+  - test
+
+java:
+  stage: test
+  script:
+    - mvn test
+  artifacts:
+    reports:
+      junit:
+        - target/surefire-reports/TEST-*.xml
+        - target/failsafe-reports/TEST-*.xml
