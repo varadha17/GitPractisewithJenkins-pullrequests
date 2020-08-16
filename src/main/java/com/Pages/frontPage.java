@@ -2,6 +2,7 @@ package com.Pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -27,10 +28,12 @@ public class frontPage extends BaseTest{
 		Thread.sleep(6000);
 	}
 	
-	public void searchbox() throws InterruptedException {
+	public secondPage searchbox() throws InterruptedException, IOException {
 		Thread.sleep(6000);
 		search.sendKeys("Hello");
+		search.sendKeys(Keys.ENTER);
 		Thread.sleep(6000);
+		return new secondPage();
 	}
 
 }
