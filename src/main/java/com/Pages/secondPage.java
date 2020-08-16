@@ -23,6 +23,7 @@ public class secondPage extends BaseTest {
 	public void getLinks() {
 		for(WebElement ele:links) {
 			System.out.println(ele.getText());
+			System.out.println("Get List of Links");
 		}
 	}
 

@@ -5,6 +5,7 @@
   <test name="PagesTest">
     <classes>
       <class name="com.Test.frontPageTest" />
+      <class name="com.Test.secondPageTest">
     </classes>
   </test>
 
