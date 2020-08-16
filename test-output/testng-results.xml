@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-15T14:22:01Z" name="Suite1" finished-at="2020-08-15T14:22:17Z" duration-ms="16682">
+  <suite started-at="2020-08-16T06:06:07Z" name="Default suite" finished-at="2020-08-16T06:08:14Z" duration-ms="126507">
     <groups>
     </groups>
-    <test started-at="2020-08-15T14:22:01Z" name="PagesTest" finished-at="2020-08-15T14:22:17Z" duration-ms="16682">
+    <test started-at="2020-08-16T06:06:07Z" name="Default test" finished-at="2020-08-16T06:08:14Z" duration-ms="126507">
       <class name="com.Test.frontPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Test.frontPageTest@75db5df9]" started-at="2020-08-15T19:52:01Z" name="setup" finished-at="2020-08-15T19:52:08Z" duration-ms="7130" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Test.frontPageTest@707194ba]" started-at="2020-08-16T11:36:07Z" name="setup" finished-at="2020-08-16T11:36:17Z" duration-ms="9451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="gmailLinkTest()[pri:0, instance:com.Test.frontPageTest@75db5df9]" started-at="2020-08-15T19:52:08Z" name="gmailLinkTest" finished-at="2020-08-15T19:52:17Z" duration-ms="8891" status="PASS">
+        <test-method signature="gmailLinkTest()[pri:0, instance:com.Test.frontPageTest@707194ba]" started-at="2020-08-16T11:36:17Z" name="gmailLinkTest" finished-at="2020-08-16T11:37:52Z" duration-ms="95225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gmailLinkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.frontPageTest@75db5df9]" started-at="2020-08-15T19:52:17Z" name="tearDown" finished-at="2020-08-15T19:52:17Z" duration-ms="641" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.frontPageTest@707194ba]" started-at="2020-08-16T11:37:52Z" name="tearDown" finished-at="2020-08-16T11:37:53Z" duration-ms="658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Test.frontPageTest@707194ba]" started-at="2020-08-16T11:37:53Z" name="setup" finished-at="2020-08-16T11:38:01Z" duration-ms="8381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchboxTest()[pri:0, instance:com.Test.frontPageTest@707194ba]" started-at="2020-08-16T11:38:01Z" name="searchboxTest" finished-at="2020-08-16T11:38:13Z" depends-on-methods="com.Test.frontPageTest.gmailLinkTest" duration-ms="12140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchboxTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.frontPageTest@707194ba]" started-at="2020-08-16T11:38:13Z" name="tearDown" finished-at="2020-08-16T11:38:14Z" duration-ms="627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Test.frontPageTest -->
-    </test> <!-- PagesTest -->
-  </suite> <!-- Suite1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

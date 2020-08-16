@@ -30,6 +30,11 @@ public class frontPageTest extends BaseTest{
 		fp.gmailtest();
 	}
 	
+	@Test(dependsOnMethods="gmailLinkTest")
+	public void searchboxTest() throws InterruptedException {
+		fp.searchbox();
+	}
+	
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
