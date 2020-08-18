@@ -7,6 +7,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -23,16 +24,17 @@ public class BaseTest {
 		prop.load(fis);
 	}
 	
+	
 	public static void startBrowser() {
 		
-		String Browser = prop.getProperty("browser");
+		String browser = prop.getProperty("browser");
 		
-		if(Browser.equalsIgnoreCase("chrome")) {
+		if(browser.equalsIgnoreCase("chrome")) {
 			
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			
-		} else if (Browser.equalsIgnoreCase("firefox")) {
+		} else if (browser.equalsIgnoreCase("firefox")) {
 			
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();

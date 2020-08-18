@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.Base.BaseTest;
@@ -20,8 +21,9 @@ public class secondPageTest extends BaseTest{
 	public secondPage sp;
 	
 	@BeforeMethod
-	public void setup() throws InterruptedException, IOException {
-		startBrowser();
+	@Parameters("browser")
+	public void setup(String browser) throws InterruptedException, IOException {
+		startBrowser(browser);
 		
 		fp = new frontPage();
 		sp = fp.searchbox();
