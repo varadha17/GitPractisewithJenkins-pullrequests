@@ -25,10 +25,10 @@ public class frontPageTest extends BaseTest{
 	}
 	
 	
-	@Test(enabled=false)
-	public void gmailLinkTest() throws InterruptedException {
-		fp.gmailtest();
-	}
+//	@Test(enabled=false)
+//	public void gmailLinkTest() throws InterruptedException {
+//		fp.gmailtest();
+//	}
 	
 	@Test
 	public void searchboxTest() throws InterruptedException, IOException {
